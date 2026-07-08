@@ -42,3 +42,5 @@ Aishwarya R C
 ## Internship Project
 
 Employee Management System using Flask, MySQL, and REST APIs.
+
+Last Updated: 08-07-2026
