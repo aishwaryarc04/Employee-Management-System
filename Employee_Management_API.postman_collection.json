@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "e78de25c-687b-44f4-9e98-93016657339f",
+    "name": "Employee Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45136588",
+    "_collection_link": "https://go.postman.co/collection/45136588-e78de25c-687b-44f4-9e98-93016657339f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET All Employees",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Rahul Sharma\",\r\n    \"age\":25,\r\n    \"department\":\"HR\",\r\n    \"designation\":\"Senior Developer\",\r\n    \"salary\":60000,\r\n    \"phone\":\"9999999999\",\r\n    \"email\":\"rahulsharma@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/employees",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Employee By ID",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/employees/1001",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "employees",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Employee",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"emp_id\": 1006,\r\n    \"name\": \"Piya\",\r\n    \"age\": 23,\r\n    \"department\": \"IT\",\r\n    \"designation\": \"Developer\",\r\n    \"salary\": 35000,\r\n    \"phone\": \"9876543215\",\r\n    \"email\": \"piya@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/employees",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT Employee",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Aishu\",\r\n    \"age\": 23,\r\n    \"department\": \"HR\",\r\n    \"designation\": \"Senior Intern\",\r\n    \"salary\": 35000,\r\n    \"phone\": \"9876543210\",\r\n    \"email\": \"aishu@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/employees/1001",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "employees",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE Employee",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/employees/1001",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "employees",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
